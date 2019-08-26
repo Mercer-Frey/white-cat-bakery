@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href="/fancybox/3/fancybox/3.2/css/jquery.fancybox.min.css?v=2">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,700');
+
+body, html {
+  background-color: #f7f7f7;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 5vh 10vw;
+}
+
+h2, h3 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.fancybox-slide > div > h2:first-child {
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+code {
+  background: #eee;
+  padding: 0 5px;
+  font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+iframe {
+  border: 1px solid #ccc;
+  width: 80vw;
+  height: calc(100vh - 100px);
+}
+
+a {
+  color: #FF6666;
+  cursor: pointer;
+}
+
+a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif] {
+  text-decoration: none;
+  border: 0 none;
+}
+
+a img {
+  vertical-align: top;
+}
+
+.btn {
+  background: #FF6666;
+  border-width: 0;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 20px;
+  line-height: 1.5;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 80%;
+  font-weight: 700;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff;
+}
+
+.imglist img {
+  height: 130px;
+  margin-bottom: 4px;
+}
+
+.tright {
+  text-align: right;
+}
+
+.tright .btn {
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  background: #eee;
+  margin: 0 20px 20px 0;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+  <h2>fancyBox v3.2 - Preview</h2>
+
+<p>&nbsp;</p>
+
+<div class="row">
+  <div class="col-md-8">
+    <p class="imglist">
+      <a href="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" data-fancybox="images">
+          <img src="https://c1.staticflickr.com/9/8148/29324593462_f890687b7a_m.jpg" />
+      </a>
+
+      <a href="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" data-fancybox="images">
+          <img src="https://c2.staticflickr.com/6/5499/30972532232_e9a298a0c5_m.jpg" />
+      </a>
+
+      <a href="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_b_d.jpg" data-fancybox="images">
+        <img src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg">
+    </a>
+
+      <a href="https://c1.staticflickr.com/1/357/31876784275_12286240d4_h.jpg" data-fancybox="images">
+        <img src="https://c1.staticflickr.com/1/357/31876784275_fbc9696913_m.jpg" />
+      </a>
+
+      <a href="https://farm3.staticflickr.com/2859/33395734202_522f9d8efd_k_d.jpg" data-fancybox="images">
+        <img src="https://farm3.staticflickr.com/2859/33395734202_15a81c4ef3_m_d.jpg" />
+      </a>
+
+      <a href="https://farm4.staticflickr.com/3953/15594397982_477385f90d_b_d.jpg" data-fancybox="images">
+        <img src="https://farm4.staticflickr.com/3953/15594397982_477385f90d_m_d.jpg" />
+      </a>
+    </p>
+
+    <p>
+        <a href="fancybox-3.2.0-beta2.zip">Download</a>
+    </p>
+  </div>
+
+
+
+
+  <div class="col-md-4">
+    <form>
+
+      <div class="form-group">
+        <label for="inputEmail3" class="control-label">Open/close animation type</label>
+        <select name="animationEffect" class="form-control">
+          <option value="zoom">zoom</option>
+          <option value="fade">fade</option>
+          <option value="zoom-in-out">zoom-in-out</option>
+          <option value="" style="font-style:italic;color:#888;">none</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="inputPassword3" class="control-label">Transition effect between slides</label>
+        <select name="transitionEffect" class="form-control">
+          <option value="fade">fade</option>
+          <option value="slide">slide</option>
+          <option value="rotate">rotate</option>
+          <option value="circular">circular</option>
+          <option value="tube">tube</option>
+          <option value="zoom-in-out">zoom-in-out</option>
+          <option value="" style="font-style:italic;color:#888;">none</option>
+        </select>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="arrows" value="1" checked="checked"> Navigation arrows
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="infobar" value="1" checked="checked"> Counter
+        </label>
+      </div>
+
+       <div class="form-group">
+        <label class="radio-inline">
+          <input type="radio" name="lang" value="en" checked="checked"> English
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="lang" value="de"> German
+        </label>
+      </div>
+
+
+    </form>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="/fancybox/3/fancybox/3.2/js/jquery.fancybox.min.js?v=2"></script>
+
+<script >
+    $("select").change(function() {
+  var opt = $(this).attr("name");
+  var val = $(this).val();
+
+  $.fancybox.defaults[ opt ] = val === "" ? false : val;
+
+  // Make "fade" transiton faster than others
+  if ( opt === 'transitionEffect' ) {
+    $.fancybox.defaults[ 'transitionDuration' ] = opt === 'fade' ? 330 : 550;
+  }
+});
+
+$("input[type=radio][name=lang]").on("change", function() {
+  $.fancybox.defaults.lang = $(this).val();
+});
+
+$("input[type=checkbox]").change(function() {
+  $.fancybox.defaults[this.id] = this.checked ? true : false;
+});
+  //# sourceURL=pen.js
+  </script>
+
+
+
+
+</body>
+</html>
